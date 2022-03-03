@@ -40,10 +40,19 @@ render() {
                         <ProjectsSubItem value="Compiles an object-oriented Java-like language into the same assembly that runs in the RISC CPU emulator."></ProjectsSubItem>
                         <ProjectsSubItem value="It has scoped variables, uses a function call stack, classes, a heap. Its pretty cool. And still a little buggy."></ProjectsSubItem>
                     
-                        <ProjectsItem value="This Website, 2022" />
+                    <ProjectsItem value="This Website, 2022" />
                         <ProjectsSubItem value="Built with: react.js and Three.js"></ProjectsSubItem>
-                        <ProjectsSubItem value="Code here:"/>
-  
+                        <ProjectsSubItem value="Code here:" href="https://github.com/ab1nadi/personal_website.git"/>
+
+                    <ProjectsItem value="The rubiks cube on this website, 2022" />
+                        <ProjectsSubItem value="Built with: Three.js"></ProjectsSubItem>
+                        <ProjectsSubItem value="It was a fun little projrect."></ProjectsSubItem>
+                        <ProjectsSubItem value="code here:" href="https://github.com/ab1nadi/rubiks.git"/>
+    
+                    <ProjectsItem value="Eureka Roofing Website, 2022" />
+                        <ProjectsSubItem value="Built with: react.js and parse-server backend"></ProjectsSubItem>
+                        <ProjectsSubItem value="I made this website for my Dads business."></ProjectsSubItem>
+                        <ProjectsSubItem value="hosted here:" href="https://eurekaroofingutah.com"/>
 
              </div>
           </div>

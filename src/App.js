@@ -6,6 +6,8 @@ import {initRubiks, animateRubiks, doodleRubiks, setRubiksPosition} from 'rubiks
 import Home from './pages/home/Home'
 import Qualifications from './pages/qualifications/Qualifications';
 import Projects from './pages/projects/Projects';
+import Education from './pages/education/Education';
+import Contact from './pages/contact/Contact';
 export default class App extends React.Component{
 
   constructor(props) {
@@ -129,6 +131,8 @@ render() {
         <Home/>
         <Qualifications/>
         <Projects/>
+        <Education/>
+        <Contact/>
     </div>
   );
 }
