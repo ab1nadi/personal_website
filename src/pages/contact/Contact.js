@@ -25,10 +25,3 @@ function ContactItem(props)
     return <div className="contact_box_item">+ {props.value}</div>
 }
 
-function ContactSubItem(props)
-{
-    if(!props.href)
-        return <div className="contact_box_sub_item">- {props.value}</div>
-    else
-        return <div className="contact_box_sub_item">- {props.value} <a href={props.href}>{props.href}</a></div>
-}

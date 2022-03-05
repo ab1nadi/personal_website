@@ -4,7 +4,8 @@
     height:100%;
     display:flex;
     justify-content:flex-end;
-    padding:40px;
+    padding-left:40px;
+    padding-right:40px;
     align-items:center;  
     box-sizing: border-box;
 }
@@ -49,4 +50,18 @@
 .education_box_item
 {
   text-align:left
+}
+
+
+@media only screen and (max-width: 600px) {
+
+
+  .education
+  {
+    height:auto;
+    padding:40px;
+    justify-content: center;
+  }
+
+
 }

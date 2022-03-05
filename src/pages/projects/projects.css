@@ -4,7 +4,9 @@
     height:100%;
     display:flex;
     justify-content:flex-start;
-    padding:40px;
+    padding-left:40px;
+    padding-right:40px;
+  
     align-items:center;  
     box-sizing: border-box;
 }
@@ -17,6 +19,7 @@
   background-color:rgba(255,255,255,0.3);
   border-radius:3px;
   padding:10px;
+  
 
 }
 
@@ -38,10 +41,26 @@
 .projects_box_sub_item
 {
   padding-left:10px;
-  text-align:left
+  text-align:left;
+  text-overflow: ellipsis;
 }
 
 .projects_box_item
 {
-  text-align:left
+  text-align:left;
+  text-overflow: ellipsis;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+
+  .projects
+  {
+    height:auto;
+    padding:40px;
+    justify-content: center;
+  }
+
+
 }

@@ -25,10 +25,12 @@ export default class App extends React.Component{
 
   componentDidMount()
   {
+    // stuff to get the rubiks cube on the screen
     initRubiks("background", "App_background");
-
     animateRubiks();
 
+
+    // does the rubiks cube animation
     setTimeout(()=>
     {
       doodleRubiks();
@@ -107,6 +109,9 @@ export default class App extends React.Component{
     
   }
 
+
+  // updates the rubiks pos 
+  // for the scroll
   cosFunc(element)
   {
        // rubiks cube on scroll
