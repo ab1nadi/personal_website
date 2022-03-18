@@ -42,13 +42,13 @@
 {
   padding-left:10px;
   text-align:left;
-  text-overflow: ellipsis;
+  text-overflow: wrap;
 }
 
 .projects_box_item
 {
   text-align:left;
-  text-overflow: ellipsis;
+  text-overflow: wrap;
 }
 
 
@@ -65,6 +65,11 @@
   .projects_box
   {
     width:90%;
+  }
+
+  .project_link
+  {
+    font-size:10px;
   }
 
 }
