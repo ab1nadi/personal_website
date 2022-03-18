@@ -62,5 +62,9 @@
     justify-content: center;
   }
 
+  .projects_box
+  {
+    width:90%;
+  }
 
 }

@@ -56,5 +56,8 @@
     justify-content: center;
   }
 
-
+  .qualif_box
+  {
+    width:100%;
+  }
 }
