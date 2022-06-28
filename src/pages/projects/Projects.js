@@ -1,6 +1,7 @@
 import React from 'react'
 import './projects.css';
 
+// react component that holds project pages
 export default class Projets extends React.Component{
 
 render() {

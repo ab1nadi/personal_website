@@ -1,6 +1,8 @@
 import React from 'react'
 import './education.css';
 
+
+// react component for the education page
 export default class Education extends React.Component{
 
 render() {
@@ -24,10 +26,13 @@ render() {
 
 }
 
+// functional component
 function EducationItem(props)
 {
     return <div className="education_box_item">+ {props.value}</div>
 }
+
+// functional component
 
 function EducationSubItem(props)
 {
