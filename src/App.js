@@ -31,6 +31,8 @@ export default class App extends React.Component{
     initRubiks("background", "App_background");
     animateRubiks();
 
+
+    // does the rubiks cube animation
     setTimeout(()=>
     {
       doodleRubiks();

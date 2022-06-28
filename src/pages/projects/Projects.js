@@ -73,5 +73,5 @@ function ProjectsSubItem(props)
     if(!props.href)
         return <div className="projects_box_sub_item">- {props.value}</div>
     else
-        return <div className="projects_box_sub_item">- {props.value} <a href={props.href}>{props.href}</a></div>
+        return <div className="projects_box_sub_item project_link">- {props.value} <a href={props.href}>{props.href}</a></div>
 }

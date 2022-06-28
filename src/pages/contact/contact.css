@@ -50,3 +50,24 @@
 {
   text-align:left
 }
+
+
+
+@media only screen and (max-width: 600px) {
+
+
+  .contact
+  {
+    height:auto;
+    padding:40px;
+    padding-bottom:100px;
+    justify-content: center;
+  }
+  
+  .contact_box
+  {
+    width:90%;
+  }
+
+
+}
