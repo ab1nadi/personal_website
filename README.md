@@ -5,7 +5,6 @@ My personal website. Built with reactjs. The rubiks cube is a seperate project i
 * Clone the project
 * In the command prompt:  
    $ cd directory/project/is/in
-* Install the node packages: 
- $ npm install
-* Run the development server: 
- $ npm start
+   $ npm install
+* To run the development server: 
+  $ npm start
