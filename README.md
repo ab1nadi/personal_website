@@ -7,4 +7,4 @@ My personal website. Built with reactjs. The rubiks cube is a seperate project i
   * cd directory/project/is/in
   * npm install
 * To run the development server: 
-  *npm start
+  * npm start
