@@ -1,4 +1,8 @@
 # Welcome to my personal website repo
+My personal website. Built with reactjs. The rubiks cube is a seperate project in its own repo. 
 
-Just a little site I threw together in a few days with react.js. 
-I built the rubiks cube with Three.js it has it's own repo. 
+# Building the project
+* Clone the project
+* In the command prompt:  cd directory/project/is/in
+* Install the node packages: npm install
+* Run the development server: npm start
