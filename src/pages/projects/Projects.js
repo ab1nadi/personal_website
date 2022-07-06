@@ -54,6 +54,13 @@ render() {
                         <ProjectsSubItem value="I made this website for my Dads business."></ProjectsSubItem>
                         <ProjectsSubItem value="hosted here:" href="https://eurekaroofingutah.com"/>
 
+                    <ProjectsItem value="Asteroids Game Website,  2022" />
+                        <ProjectsSubItem value="Built with: vitejs bundler, HTML, CSS, and Javascript."></ProjectsSubItem>
+                        <ProjectsSubItem value="Just a basic copy of the classic Asteroids game."></ProjectsSubItem>
+                        <ProjectsSubItem value="Code here: " href="https://github.com/ab1nadi/asteroids"></ProjectsSubItem>
+                        <ProjectsSubItem value="Running here: " href="https://ab1nadi.github.io/asteroids/"></ProjectsSubItem>
+
+
              </div>
           </div>
       </div>
