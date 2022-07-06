@@ -1,6 +1,8 @@
 import React from 'react'
 import './qualifications.css';
 
+
+// react component that holds the qualifications page
 export default class Qualifications extends React.Component{
 
 render() {
@@ -40,11 +42,14 @@ render() {
 
 }
 
+
+// react functional component
 function QualifItem(props)
 {
     return <div className="qualif_box_item">+ {props.value}</div>
 }
 
+// react functional component
 function QualifSubItem(props)
 {
     return <div className="qualif_box_sub_item">- {props.value}</div>

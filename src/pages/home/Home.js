@@ -1,6 +1,7 @@
 import React from 'react'
 import './home.css';
 
+// react component that holds home page
 export default class Home extends React.Component{
 
 render() {

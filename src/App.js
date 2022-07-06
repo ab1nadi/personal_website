@@ -17,15 +17,17 @@ export default class App extends React.Component{
     this.mobileRubiksYPos = ()=> window.innerHeight-200;
     this.nonMobileRubiksYPos = ()=>window.innerHeight/2;
 
+
+    // bind some functions
     this.windowResize = this.windowResize.bind(this);
     this.scrollHandler = this.scrollHandler.bind(this);
-
     this.cosFunc = this.cosFunc.bind(this);
   }
 
   componentDidMount()
   {
-    // stuff to get the rubiks cube on the screen
+
+    // setup and animate the rubiks cube
     initRubiks("background", "App_background");
     animateRubiks();
 
@@ -82,6 +84,9 @@ export default class App extends React.Component{
     }
   }
 
+
+  // handles the scrolling 
+  // with the rubiks cube
   scrollHandler(e)
   {
 
@@ -110,8 +115,10 @@ export default class App extends React.Component{
   }
 
 
-  // updates the rubiks pos 
-  // for the scroll
+  // basically this function finds
+  // the right offset of the rubiks cube
+  // for a particular scrolltop
+  // it is a cosfunc
   cosFunc(element)
   {
        // rubiks cube on scroll
@@ -127,6 +134,9 @@ export default class App extends React.Component{
 
        return rubiksPos;
   }
+
+
+// render those elements
 render() {
 
   return (
