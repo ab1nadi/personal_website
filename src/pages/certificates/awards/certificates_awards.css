@@ -1,16 +1,16 @@
-.contact
+.awards
 {
     width:100%;
     height:100%;
     display:flex;
-    justify-content:flex-end;
+    justify-content:flex-start;
     padding:40px;
     align-items:center;  
     box-sizing: border-box;
 }
 
 
-.contact_box
+.awards_box
 {
 
   width:600px;
@@ -20,12 +20,12 @@
 
 }
 
-.contact_title
+.awards_title
 {
   font-size:30px;
 }
 
-.contact_box_content
+.awards_box_content
 {
   width:100%;
   height:100%;
@@ -35,18 +35,18 @@
   flex-wrap:wrap;
 }
 
-.contact_box_content > *
+.awards_box_content > *
 {
   font-size:20px;
 }
 
-.contact_box_sub_item
+.awards_box_sub_item
 {
   padding-left:10px;
   text-align:left
 }
 
-.contact_box_item
+.awards_box_item
 {
   text-align:left
 }
@@ -56,7 +56,7 @@
 @media only screen and (max-width: 600px) {
 
 
-  .contact
+  .awards
   {
     height:auto;
     padding:40px;
@@ -64,7 +64,7 @@
     justify-content: center;
   }
   
-  .contact_box
+  .awards_box
   {
     width:90%;
   }

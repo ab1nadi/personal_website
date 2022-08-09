@@ -8,6 +8,8 @@ import Qualifications from './pages/qualifications/Qualifications';
 import Projects from './pages/projects/Projects';
 import Education from './pages/education/Education';
 import Contact from './pages/contact/Contact';
+import Awards from './pages/certificates/awards/certificates_awards';
+
 export default class App extends React.Component{
 
   constructor(props) {
@@ -147,6 +149,7 @@ render() {
         <Qualifications/>
         <Projects/>
         <Education/>
+        <Awards/>
         <Contact/>
     </div>
   );
