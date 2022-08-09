@@ -11,6 +11,7 @@ render() {
           <div className="projects_box"> 
               <div className="projects_title">Projects</div>
               <div className="projects_box_content">
+                
                     <ProjectsItem value="Cellular Automaton Conway's Game of Life,  2022" />
                         <ProjectsSubItem value="Built with: Vite, Two.js, and vanilla HTML5/CSS/javascript"></ProjectsSubItem>
                         <ProjectsSubItem value="A basic implementation of Conway's Game of Life. Select the cells you want turned 
