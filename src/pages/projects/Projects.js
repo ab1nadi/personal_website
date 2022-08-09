@@ -11,36 +11,13 @@ render() {
           <div className="projects_box"> 
               <div className="projects_title">Projects</div>
               <div className="projects_box_content">
-                    <ProjectsItem value="Sudoku Website,  2021" />
-                        <ProjectsSubItem value="Built with: Webpack, HTML, CSS, and Javascript."></ProjectsSubItem>
-                        <ProjectsSubItem value="Can generate puzzles of a chosen difficulty, that are playable"></ProjectsSubItem>
-                        <ProjectsSubItem value="Code here: " href="https://github.com/ab1nadi/sudoku.git"></ProjectsSubItem>
-                        <ProjectsSubItem value="Running here: " href="https://ab1nadi.github.io/sudoku"></ProjectsSubItem>
+                    <ProjectsItem value="Cellular Automaton Conway's Game of Life,  2022" />
+                        <ProjectsSubItem value="Built with: Vite, Two.js, and vanilla HTML5/CSS/javascript"></ProjectsSubItem>
+                        <ProjectsSubItem value="A basic implementation of Conway's Game of Life. Select the cells you want turned 
+                        on and click start to see what happens."></ProjectsSubItem>
+                        <ProjectsSubItem value="Code here: " href="https://github.com/ab1nadi/cellular_automaton.git"></ProjectsSubItem>
+                        <ProjectsSubItem value="Running here: " href="https://ab1nadi.github.io/cellular_automaton/"></ProjectsSubItem>
 
-                    <ProjectsItem value="SpaceX API Demo Site, 2021" />
-                        <ProjectsSubItem value="Built with: Vue.js, axios.js, and lodash.js."></ProjectsSubItem>
-                        <ProjectsSubItem value="Consumes the spaceX api."></ProjectsSubItem>
-                        <ProjectsSubItem value="Code here: " href="https://github.com/ab1nadi/spaceX_API_Demo.git"></ProjectsSubItem>
-                        <ProjectsSubItem value="Running here: " href="https://ab1nadi.github.io/spaceX_API_Demo/"></ProjectsSubItem>
-                   
-                    <ProjectsItem value="Database, 2021" />
-                        <ProjectsSubItem value="Built with: C++"></ProjectsSubItem>
-                        <ProjectsSubItem value="This was a school project, so I can't post the code. But, I can show it upon request"></ProjectsSubItem>
-                        <ProjectsSubItem value="Built a B++ tree that stores tuples, and they are persistent on disk"></ProjectsSubItem>
-                        <ProjectsSubItem value="Built a B++ tree that stores tuples, and they are persistent on disk"></ProjectsSubItem>
-
-                    <ProjectsItem value="RISC CPU Emulator, 2019" />
-                        <ProjectsSubItem value="Built with: C++"></ProjectsSubItem>
-                        <ProjectsSubItem value="This was a school project, so I can't post the code. But, I can show it upon request"></ProjectsSubItem>
-                        <ProjectsSubItem value="Runs a RISC based assembly provided by the teacher"/>
-                        <ProjectsSubItem value="At one point it was multithreaded. And currently has support for a function call stack and heap"/>
-                    
-                    <ProjectsItem value="Compiler, 2019" />
-                        <ProjectsSubItem value="Built with: C++"></ProjectsSubItem>
-                        <ProjectsSubItem value="This was a school project, so I can't post the code. But, I can show it upon request"></ProjectsSubItem>
-                        <ProjectsSubItem value="Compiles an object-oriented Java-like language into the same assembly that runs in the RISC CPU emulator."></ProjectsSubItem>
-                        <ProjectsSubItem value="It has scoped variables, uses a function call stack, classes, a heap. Its pretty cool. And still a little buggy."></ProjectsSubItem>
-                    
                     <ProjectsItem value="This Website, 2022" />
                         <ProjectsSubItem value="Built with: react.js and Three.js"></ProjectsSubItem>
                         <ProjectsSubItem value="Code here:" href="https://github.com/ab1nadi/personal_website.git"/>
@@ -55,6 +32,35 @@ render() {
                         <ProjectsSubItem value="I made this website for my Dads business."></ProjectsSubItem>
                         <ProjectsSubItem value="hosted here:" href="https://eurekaroofingutah.com"/>
 
+                    <ProjectsItem value="Sudoku Website,  2021" />
+                        <ProjectsSubItem value="Built with: Webpack, HTML, CSS, and Javascript."></ProjectsSubItem>
+                        <ProjectsSubItem value="Generates playable puzzles of any wanted difficulty."></ProjectsSubItem>
+                        <ProjectsSubItem value="Code here: " href="https://github.com/ab1nadi/sudoku.git"></ProjectsSubItem>
+                        <ProjectsSubItem value="Running here: " href="https://ab1nadi.github.io/sudoku"></ProjectsSubItem>
+
+                    <ProjectsItem value="SpaceX Info Site, 2021" />
+                        <ProjectsSubItem value="Built with: Vue.js, axios.js, and lodash.js."></ProjectsSubItem>
+                        <ProjectsSubItem value="Consumes the spaceX api."></ProjectsSubItem>
+                        <ProjectsSubItem value="Code here: " href="https://github.com/ab1nadi/SpaceX_Info_site.git"></ProjectsSubItem>
+                        <ProjectsSubItem value="Running here: "href= "https://ab1nadi.github.io/SpaceX_Info_site/"></ProjectsSubItem>
+                   
+                    <ProjectsItem value="Database, 2021" />
+                        <ProjectsSubItem value="Built with: C++"></ProjectsSubItem>
+                        <ProjectsSubItem value="This was a school project, so I can't post the code. But, I can show it upon request."></ProjectsSubItem>
+                        <ProjectsSubItem value="Built a B++ tree that stores tuples, and they are persistent on disk."></ProjectsSubItem>
+                    
+                    <ProjectsItem value="RISC CPU Emulator, 2019" />
+                        <ProjectsSubItem value="Built with: C++"></ProjectsSubItem>
+                        <ProjectsSubItem value="This was a school project, so I can't post the code. But, I can show it upon request."></ProjectsSubItem>
+                        <ProjectsSubItem value="Runs a RISC based assembly provided by the teacher"/>
+                        <ProjectsSubItem value="At one point it was multithreaded. And currently has support for a function call stack and heap."/>
+                    
+                    <ProjectsItem value="Compiler, 2019" />
+                        <ProjectsSubItem value="Built with: C++"></ProjectsSubItem>
+                        <ProjectsSubItem value="This was a school project, so I can't post the code. But, I can show it upon request."></ProjectsSubItem>
+                        <ProjectsSubItem value="Compiles an object-oriented Java-like language into the same assembly that runs in the RISC CPU emulator."></ProjectsSubItem>
+                        <ProjectsSubItem value="It has scoped variables, uses a function call stack, classes, a heap. Its pretty cool. And still a little buggy."></ProjectsSubItem>
+                    
              </div>
           </div>
       </div>

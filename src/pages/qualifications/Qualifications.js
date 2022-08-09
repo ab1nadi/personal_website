@@ -20,9 +20,7 @@ render() {
                         <QualifSubItem value="React.js"></QualifSubItem>
                         <QualifSubItem value="Vue.js"></QualifSubItem>
                         <QualifSubItem value="Three.js"></QualifSubItem>
-                        <QualifSubItem value="React Native"></QualifSubItem>
-                        <QualifSubItem value="Express Js"></QualifSubItem>
-                    <QualifItem value="HTML5"></QualifItem>
+                        <QualifItem value="HTML5"></QualifItem>
                     <QualifItem value="CSS"></QualifItem>
                     <QualifItem value="SASS (minimally used)"></QualifItem>
                     <QualifItem value="PHP"></QualifItem>
