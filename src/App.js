@@ -1,15 +1,9 @@
-import logo from './logo.svg';
-import ReactDOM from 'react-dom'
 import React from 'react'
 import './App.css';
 import {initRubiks, animateRubiks, doodleRubiks, setRubiksPosition} from 'rubiks'
-import Home from './pages/home/Home'
-import Qualifications from './pages/qualifications/Qualifications';
-import Projects from './pages/projects/Projects';
-import Education from './pages/education/Education';
-import Contact from './pages/contact/Contact';
-import Awards from './pages/certificates/awards/certificates_awards';
-
+import Home from './home/Home'
+import Card from './card/card';
+import { data } from './data';
 export default class App extends React.Component{
 
   constructor(props) {
@@ -60,10 +54,10 @@ export default class App extends React.Component{
         // when we are not in mobile mode
         // we want the rubiks cube to stay in the middle of the
         // page
-        this.state.rubiksTop = this.nonMobileRubiksYPos();
+        this.setState({rubiksTop: this.nonMobileRubiksYPos()})
 
         if((window.innerWidth-this.state.rubiksRight) < 300)
-          this.state.rubiksRight = window.innerWidth-300;
+          this.setState({rubiksRight: window.innerWidth-300})
 
 
         // lets update the rubiksRight state
@@ -108,7 +102,8 @@ export default class App extends React.Component{
       // when not in mobile mode
       // lets have the rubiks cube follow the home page
       let yScrollValue = e.target.scrollTop;
-      this.state.rubiksTop = this.mobileRubiksYPos() -yScrollValue;
+
+      this.setState({rubiksTop: this.mobileRubiksYPos() -yScrollValue})
       setRubiksPosition(window.innerWidth/2, this.state.rubiksTop)
 
       
@@ -131,7 +126,7 @@ export default class App extends React.Component{
  
        // so that the page resize maintains the current x positon of the 
        // rubiks cube
-       this.state.rubiksRight = window.innerWidth-rubiksPos;
+       this.setState({rubiksRight: window.innerWidth-rubiksPos})
 
 
        return rubiksPos;
@@ -141,16 +136,16 @@ export default class App extends React.Component{
 // render those elements
 render() {
 
+
   return (
     <div className="App" onScroll={this.scrollHandler}>
       <div className="background"></div>
-
         <Home/>
-        <Qualifications/>
-        <Projects/>
-        <Education/>
-        <Awards/>
-        <Contact/>
+        {
+        data.map((item,key) => (<Card key = {key} data={item}></Card>))
+        }
+    
+
     </div>
   );
 }

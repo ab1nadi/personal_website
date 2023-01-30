@@ -5,10 +5,6 @@
   overflow-x:hidden;
 }
 
-
-
-
-
 .background
 {
   position:fixed;
@@ -18,4 +14,16 @@
   width:100%;
   height:100%;
   z-index:-9999;
+}
+
+
+.qualif_box_sub_item
+{
+  padding-left:10px;
+  text-align:left
+}
+
+.qualif_box_item
+{
+  text-align:left
 }
