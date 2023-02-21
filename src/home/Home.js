@@ -8,7 +8,7 @@ render() {
 
   return (
       <div className="home">
-          <div className="home-text"> 
+          <div className="home-text slideInAnimation"> 
               <div>Abinadi Swapp</div>
               <div>Software Dev</div>
           </div>

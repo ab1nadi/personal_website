@@ -1,14 +1,28 @@
 import React from 'react'
 import './card.css';
-
-
+import { useIntersectionObserver } from 'react-intersection-observer-hook';
+import { useEffect, useState } from 'react';
 // react component
 // for a card
 export default function Card(props) {
 
+    const [ref, { entry }] = useIntersectionObserver();
+    const isVisible = entry && entry.isIntersecting;
+    const [show, setShow] = useState(false);
+   
+    // want it to be shown forever
+    // after it has been in view once
+    useEffect(() => {
+      if(isVisible && !show)
+      {
+        setShow(true);
+      }
+    }, [isVisible]);
+  
+
     return (
         <div className="card">
-            <div className="card_box"> 
+            <div ref={ref} className={`card_box  ${show? "slideInAnimation" : "invisible" }`}> 
                 <div className="card_title">{props.data.title}</div>
                 <div className= {"card_box_content "}>
                     <List style={props.data.style} list={props.data.listItems}></List>

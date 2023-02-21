@@ -27,3 +27,28 @@
 {
   text-align:left
 }
+
+
+
+.slideInAnimation {
+  animation-duration: 1s;
+  animation-name: slideInFrames;
+}
+
+
+.invisible {
+  opacity:0;
+}
+
+
+@keyframes slideInFrames {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
