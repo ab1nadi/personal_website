@@ -11,7 +11,16 @@ export let demo_data  =
     {
         id: "spaceXinfo",
         url: "https://ab1nadi.github.io/SpaceX_Info_site/"
+    },
+    {
+        id: "conways_game",
+        url: "https://ab1nadi.github.io/cellular_automaton/"
+    },
+    {
+        id: "rubiks",
+        url: "https://ab1nadi.github.io/rubiks/"
     }
+
 ]
 
 

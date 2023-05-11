@@ -56,6 +56,15 @@ export let project_data  =
         demo: "/demos/conways_game",
     },
     {
+        id: "rubiks",
+        title: "Rubiks Cube",
+        date: "2022",
+        description:"A 3d render of a rubiks cube with animations. Just a novelty I thought would make my personal website look cool.",
+        bullet_points: ["Built with: Webpack, Three.js, and vanilla HTML5/CSS/javascript."],
+        github: "https://github.com/ab1nadi/cellular_automaton.git",
+        demo: "/demos/rubiks",
+    },
+    {
         id: "spaceX",
         title: "SpaceX Launch Info Site",
         date: "2021",
