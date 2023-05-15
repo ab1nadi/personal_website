@@ -1,9 +1,14 @@
 import {getProjectById, getAllIDs} from "@/data/projects";
 import { generate } from 'random-key';
 
+
+
+// runs at compile time
+// gets ids used in all
+// possible paths for all possible
+// projects at compile time
 export async function getStaticPaths() {
 const paths = getAllIDs();
-
 return {
     paths,
     fallback: false,
@@ -11,6 +16,10 @@ return {
 }
 
 
+// runs at compile time
+// gets project data
+// for a single project id 
+// and passes it to a Project component
 export async function getStaticProps({ params }) {
 const projectData =  getProjectById(params.id);
 return {
@@ -21,6 +30,12 @@ return {
 }
 
 
+
+
+// Project
+// Holds a project component
+// hosted on its own url
+// and listed on the project page
 export default function Project({projectData})
 {
     return(

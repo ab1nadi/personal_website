@@ -1,3 +1,9 @@
+// project_data
+// this file houses 
+// the data that is used to generate
+// routes and components for projects
+// at compile time
+
 export let project_data  =
 [
     
@@ -114,6 +120,9 @@ export let project_data  =
 ]
 
 
+// getAllIDs
+// returns all ids
+// at compile time
 export function getAllIDs()
 {
     return project_data.map((proj)=>
@@ -127,6 +136,9 @@ export function getAllIDs()
     })
 }
 
+
+// getProjectByid
+// returns a project by id
 export function getProjectById(id)
 {
     return project_data.find(proj=> proj.id==id);

@@ -1,3 +1,10 @@
+// demo_data
+// this file houses 
+// the data that is used to generate
+// routes and components for demos
+// at compile time
+
+
 export let demo_data  =
 [
    {
@@ -23,7 +30,8 @@ export let demo_data  =
 
 ]
 
-
+// getAllIDs
+// returns all ids 
 export function getAllIDs()
 {
     return demo_data.map((demo)=>
@@ -37,6 +45,9 @@ export function getAllIDs()
     })
 }
 
+
+// getDemoById
+// returns a demo by id
 export function getDemoById(id)
 {
     return demo_data.find(demo=> demo.id==id);

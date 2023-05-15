@@ -3,7 +3,9 @@ import { useEffect } from "react"
 
 export default function Home({showRubiks}) {
 
-
+  // show the rubiks cube when 
+  // this page mounts
+  // it is the home page
   useEffect(()=>
   {
     showRubiks(true);

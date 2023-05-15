@@ -1,11 +1,11 @@
-import { useState, useEffect, useLayoutEffect } from 'react';
+import { useState } from 'react';
 import { Spin as Hamburger } from 'hamburger-react'
 import { demo_data } from '@/data/demos';
 import Link from 'next/link';
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu';
 import { useWindowResize } from '@/lib/window_resize_hook';
 
-export default function Nav({small, forceHamburger})
+export default function Nav()
 {
     const [isOpen, setOpen] = useState(false)
     const [navAnimation, setNavAnimation] = useState("");
@@ -38,19 +38,17 @@ export default function Nav({small, forceHamburger})
         setOpen(false);
 
         
-
         if(navAnimation == "animate-opennav")
             handleNav(false);
 
-            setMiniDropDown(false);
-            setFullDropDown(false);
+        setMiniDropDown(false);
+        setFullDropDown(false);
     }
 
 
     // removeAnimateCloseNav
-    // the only way I could get this 
-    // to remove the animatation css class
-    // when the nav is closed
+    // removes the slide_left css animation
+    // if it was the last animation
     function removeAnimateCloseNav(e)
     {
         if(e.animationName == 'slide_left')
@@ -59,6 +57,13 @@ export default function Nav({small, forceHamburger})
         }
     }
 
+
+    // A hook that chatgpt
+    // wrote for me that runs
+    // whenever the window resizes
+    // I used it in this case to 
+    // hide the drop downs and close the nav
+    // if the window gets resized
     useWindowResize((w,h)=> 
     {
         setMiniDropDown(false);
@@ -84,6 +89,8 @@ export default function Nav({small, forceHamburger})
             <Link href="/" onClick={closeOnLinkPress} className=" p-3 hover:text-white text-blue-300 font-mono font-light md:text-center text-left">Home</Link>
             <Link href="/projects" onClick={closeOnLinkPress} className=" p-3 hover:text-white text-blue-300 font-mono font-light md:text-center text-left">Projects</Link>
             
+
+            {/*The demo drop down button*/}
             <DropdownMenu.Root key={1} className="hidden md:visible" open={fullDropDown} onOpenChange={setFullDropDown}>
                 <DropdownMenu.Trigger asChild>
                     <button className="IconButton p-3 hover:text-white text-blue-300 font-mono font-light md:text-center text-left outline-none	" aria-label="Customise options">
@@ -96,11 +103,14 @@ export default function Nav({small, forceHamburger})
                 <DropdownMenu.Content className="z-50 " >
 
                     {
+
+                        // list all the available demos
+                        // link to their ids 
                         demo_data.map((demo)=>
                         {
                             return (
                                 <DropdownMenu.Item key={demo.id} className="w-40 bg-white  hover:bg-slate-400 outline-none">
-                                    <Link onClick={()=>{setOpen(false); closeOnLinkPress();}} className="w-full h-full p-4 block" href={"/demos/"+demo.id}>{demo.id}</Link>
+                                    <Link onClick={()=>{setOpen(false); closeOnLinkPress();}} className="w-full h-full p-4 block text-black" href={"/demos/"+demo.id}>{demo.id}</Link>
                                 </DropdownMenu.Item>
                             )
                         })
@@ -112,7 +122,6 @@ export default function Nav({small, forceHamburger})
 
 
             <Link href="/certifications" onClick={closeOnLinkPress} className=" p-3 hover:text-white text-blue-300 font-mono font-light md:text-center text-left">Certificates</Link>
-            <Link href="/experience" onClick={closeOnLinkPress} className=" p-3 hover:text-white text-blue-300 font-mono font-light md:text-center text-left" >Experience</Link>
             <Link href="/contact_me" onClick={closeOnLinkPress} className=" p-3 hover:text-white text-blue-300 font-mono font-light md:text-center text-left overflow-hidden whitespace-nowrap">Contact Me</Link>
         </div>
 
@@ -120,11 +129,15 @@ export default function Nav({small, forceHamburger})
         <div className="text-3xl h-fit w-fit font-mono overflow-hidden whitespace-nowrap">Abinadi Swapp</div>
 
 
-        {/* hidden nav */}
+        {/* hidden nav */}          {/* This function runs whenever an animation finishes*/}
+                                    {/* essentially it remoes the navAnimation css class so that it can be applied again later. */}
+                                    {/*        |        */}
+                                    {/*        v        */}
         <div  onAnimationEndCapture={removeAnimateCloseNav} className={` mt-0 pt-20 text-2xl  h-screen flex flex-col bg-slate-600 w-56 -left-56 top-0 fixed ${navAnimation}`}>
             <Link href="/" onClick={closeOnLinkPress} className=" p-5 hover:text-white text-blue-300 font-mono font-ligh ttext-left">Home</Link>
             <Link href="/projects" onClick={closeOnLinkPress} className=" p-5 hover:text-white text-blue-300 font-mono font-light text-left">Projects</Link>
             
+            {/*The demo drop down button*/}
             <DropdownMenu.Root key={2} open={miniDropDown} onOpenChange={setMiniDropDown}>
                 <DropdownMenu.Trigger asChild>
                     <button className=" z-50 p-5 hover:text-white text-blue-300 font-mono font-ligh text-left outline-none	" aria-label="Customise options">
@@ -137,11 +150,14 @@ export default function Nav({small, forceHamburger})
                 <DropdownMenu.Content className="z-50">
 
                     {
+
+                        // list all the available demos
+                        // link to their ids
                         demo_data.map((demo)=>
                         {
                             return (
                                 <DropdownMenu.Item key={demo.id} className="w-40 bg-white  hover:bg-slate-400 outline-none">
-                                    <Link onClick={()=>{setOpen(false); closeOnLinkPress();}} className="w-full h-full p-4 block" href={"/demos/"+demo.id}>{demo.id}</Link>
+                                    <Link onClick={()=>{setOpen(false); closeOnLinkPress();}} className="w-full h-full p-4 block text-black" href={"/demos/"+demo.id}>{demo.id}</Link>
                                 </DropdownMenu.Item>
                             )
                         })
@@ -152,9 +168,7 @@ export default function Nav({small, forceHamburger})
             </DropdownMenu.Root>
 
 
-            <Link href="/certifications" onClick={closeOnLinkPress} className=" p-5 hover:text-white text-blue-300 font-mono font-light text-left">Certificates</Link>
-            <Link href="/experience" onClick={closeOnLinkPress} className=" p-5 hover:text-white text-blue-300 font-mono font-light text-left" >Experience</Link>
-            <Link href="/contact_me" onClick={closeOnLinkPress} className=" p-5 hover:text-white text-blue-300 font-mono font-light text-left">Contact Me</Link>
+            <Link href="/certifications" onClick={closeOnLinkPress} className=" p-5 hover:text-white text-blue-300 font-mono font-light text-left">Certificates</Link>            <Link href="/contact_me" onClick={closeOnLinkPress} className=" p-5 hover:text-white text-blue-300 font-mono font-light text-left">Contact Me</Link>
         </div>
 
     </div>

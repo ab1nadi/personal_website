@@ -1,4 +1,3 @@
-import Nav from "./nav";
 export default function MainLayout({rubiks, children})
 {
 

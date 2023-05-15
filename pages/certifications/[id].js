@@ -1,9 +1,12 @@
 import { getCertById, getAllIDs } from '@/data/certificates';
-import { generate } from 'random-key';
 
+
+// runs at compile time
+// gets ids used in all 
+// possible paths for all possible
+// certifications at compile time
 export async function getStaticPaths() {
 const paths = getAllIDs();
-
 return {
     paths,
     fallback: false,
@@ -11,6 +14,10 @@ return {
 }
 
 
+// runs at compile time
+// gets certification data
+// for a given cert id
+// and passes it to a component url
 export async function getStaticProps({ params }) {
 const certData =  getCertById(params.id);
 return {
@@ -21,6 +28,10 @@ return {
 }
 
 
+// Certification
+// Holds a certification component
+// hosted on its own id url
+// and listed on the certification page
 export default function Certification({certData})
 {
     return(

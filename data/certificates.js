@@ -1,3 +1,9 @@
+// certificate_data
+// this file houses 
+// the data that is used to generate
+// routes and components for certificates
+// at compile time
+
 export let certificate_data  =
 [
    {
@@ -34,6 +40,8 @@ export let certificate_data  =
 ]
 
 
+// getAllIDs
+// gets all the ids
 export function getAllIDs()
 {
     return certificate_data.map((cert)=>
@@ -47,6 +55,9 @@ export function getAllIDs()
     })
 }
 
+
+// getCertById
+// returns a cert by id
 export function getCertById(id)
 {
     return certificate_data.find(cert=> cert.id==id);
