@@ -1,10 +1,10 @@
-# This Repo is out of date go to: https://github.com/ab1nadi/portfolio_website
+# This Repo is out of date. Go to: https://github.com/ab1nadi/portfolio_website
 I wanted to rename the repo to "portfolio_website". That would break the links in my resume, so I decided
 to keep this repo as is and divert anyone to my new website at https://github.com/ab1nadi/portfolio_website.
 
 # Personal Website
-This repository contains the source code for my personal website, built with Next.js and Tailwind CSS. It serves as an online portfolio and showcases my work, skills, and achievements.
-It is running on github pages at https://ab1nadi.github.io/personal_website/
+This repository contains my website's source code, built with Next.js and Tailwind CSS. It is an online portfolio showcasing my work, skills, and achievements.
+It is running on GitHub pages at https://ab1nadi.github.io/personal_website/
 
 ## Features
 * **Responsive Design:** The website is optimized to work across different devices and screen sizes, ensuring a seamless user experience.
