@@ -27,6 +27,12 @@ export default function App({ Component, pageProps }) {
     <div className="w-screen h-screen">
       <iframe  ref={iframe} id="rubiks" className=" w-full h-full fixed top-0 left-0 -z-20" src={`https://ab1nadi.github.io/rubiks/?center=true&top=340`}/>
         <MainLayout>
+          <div className="w-screen p-3 flex justify-center items-center flex-wrap gap-3 bg-white text-2xl text-black z-50">
+            <div>This website is out of date, please go to:</div> 
+            <a className="hover:text-green-800" href="https://ab1nadi.github.io/portfolio_website/">
+              https://ab1nadi.github.io/portfolio_website/
+            </a>
+          </div>
           <Nav/>
           <Component showRubiks={setShowRubiks} {...pageProps} />
         </MainLayout>
